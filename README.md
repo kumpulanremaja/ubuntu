@@ -1,20 +1,21 @@
 # termux-ubuntu
 
-A script to install Ubuntu chroot in Termux
+cara install dan pasang Aplikasi termux di android 
 
-You need to install wget and proot in Termux before using this script.
+dengan kode perintah seperti di bawah ini
+ pkg update
+pkg upgrade
+pkg install git
+pkg install wget
+pkg install proot
+ git clone https://github.com/kumpulanremaja/ubuntu
+ cd ubuntu
+chmod +x ubuntu.sh
+./ubuntu.sh
 
-```
-pkg install wget proot
-```
+kode untuk menjalankan ubuntu di termux 
 
-The script will make its files in the current directory. So if you want your Ubuntu-filesystem at a particular location switch to that folder first and then call the script with it's relative path. Example:
-```
-mkdir -p ~/jails/ubuntu
-cd ~/jails/ubuntu
-wget https://raw.githubusercontent.com/Neo-Oli/termux-ubuntu/master/ubuntu.sh
-bash ubuntu.sh
-```
+ ./start-ubuntu.sh
 
-After running it you can run "start-ubuntu.sh" to switch into your ubuntu
+untuk selengkapnya cek di https://www.kumpulanremaja.com/2019/08/cara-menggunakan-ubuntu-di-termux.html
 
